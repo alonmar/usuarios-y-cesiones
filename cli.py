@@ -46,12 +46,7 @@ def predictcli(monactivo, meansales, meancesiones, proyecsales, proyecbuys):
         'proyeccion compras': proyecbuys}
 
     result = predict(data_to_predict)
-    #inches = result["height_inches"]
-    #human_readable = result["height_human_readable"]
-    #data_to_predict = {'Monto activo':0, 'Promedio Ventas': 0, 'Promedio Cesiones': 0, 'proyeccion ventas': 0, 'proyeccion compras': 0}
-    #data_to_predict = {'Monto activo':0, 'Promedio Ventas': 1, 'Promedio Cesiones': 1, 'proyeccion ventas': 0, 'proyeccion compras': 0}
-    #data_to_predict = {'Monto activo':272742288.0, 'Promedio Ventas': 4.214773e+09, 'Promedio Cesiones': 2.882901e+09, 'proyeccion ventas': 3.524934e+07, 'proyeccion compras': 0.000000e+00}
-
+    
     if result == 0:
         click.echo(click.style(f'Cluster: {result}', bg="green", fg="black"))
     elif result == 1:

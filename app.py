@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    html = "<h3>Predict the Height From Weight of MLB Players</h3>"
+    html = "<h3>Predict the cluster of an user</h3>"
     return html.format(format)
 
 @app.route("/predict", methods=['POST'])
