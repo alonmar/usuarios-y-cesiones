@@ -42,8 +42,20 @@ $ python app.py
 
 after run flask to serve a prediction against the application, run the `predict.sh`.
 
+For the bourne shell: 
+
+`sh ./predict.sh`
+
+For bash:
+
+`bash ./predict.sh`
+
+For windows:
+
+https://stackoverflow.com/questions/26522789/how-to-run-sh-on-windows-command-prompt
+
 ```
-$ ./predict.sh                             
+$sh ./predict.sh                             
 Port: 8080
 {
   "Cluster": 0
