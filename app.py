@@ -1,6 +1,4 @@
 from flask import Flask, request, jsonify
-from flask.logging import create_logger
-import logging
 
 import mlib
 
@@ -8,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    html = f"<h3>Predict the Height From Weight of MLB Players</h3>"
+    html = "<h3>Predict the Height From Weight of MLB Players</h3>"
     return html.format(format)
 
 @app.route("/predict", methods=['POST'])
