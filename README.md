@@ -4,9 +4,10 @@
 * `cli.py`: [View cli.py](https://github.com/alonmar/usuarios-y-cesiones/blob/main/cli.py)
 * `app.py`:  [View app.py](https://github.com/alonmar/usuarios-y-cesiones/blob/main/app.py)
 * `mlib.py`:  [View mlib.py](https://github.com/alonmar/usuarios-y-cesiones/blob/main/mlib.py) Model Handling Library
+* `test_mlib.py`:  [View test_mlib.py](https://github.com/alonmar/usuarios-y-cesiones/blob/main/test_mlib.py) Unit test
 * `Datos prueba.xlsx`: [View data](https://github.com/alonmar/usuarios-y-cesiones/tree/main/data/01_raw) Data
 * `kmeans_model.joblib`: [View kmeans_model.joblib](https://github.com/alonmar/usuarios-y-cesiones/blob/main/kmeans_model.joblib)
-*  `eda.ipynb`:  [eda.ipynb](https://github.com/alonmar/usuarios-y-cesiones/blob/main/eda.ipynb)
+*  `eda.ipynb`:  [eda.ipynb](https://github.com/alonmar/usuarios-y-cesiones/blob/main/eda.ipynb) EDA and Export model
 
 
 ### CLI Tools
@@ -20,8 +21,6 @@ To predict the cluster of an user you use the following:
 ### Flask Microservice
 
 The Flask ML Microservice can be run many ways.
-
-#### Containerized Flask Microservice Locally
 
 You can run the Flask Microservice as follows with the commmand: `python app.py`.
 
@@ -62,5 +61,10 @@ Port: 8080
 }
 
 ```
+
+
+### Unit test model
+
+`python -m pytest -vv test_mlib.py`
 
 
