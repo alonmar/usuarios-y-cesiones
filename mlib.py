@@ -15,20 +15,19 @@ def data():
     return df
 
 def cluster_0(data_to_predict):
-    ''' adsad '''
-    # unit test
+    ''' If no values return 0 '''
     sum_values = sum(data_to_predict.values())
 
     return sum_values 
     
 def cluster_1(data_to_predict):
-
+    ''' If no values in 'Monto activo' 'proyeccion ventas' 'proyeccion compras' return 0 '''
     sum_values = data_to_predict['Monto activo'] + data_to_predict['proyeccion ventas'] + data_to_predict['proyeccion compras']
 
     return sum_values
 
 def predict(data_to_predict):
-    """Takes weight and predicts height"""
+    """Takes vars and calc the cluster"""
 
     clf = load_model()  # loadmodel
 
