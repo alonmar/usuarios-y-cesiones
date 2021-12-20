@@ -11,7 +11,7 @@ def home():
 
 @app.route("/predict", methods=['POST'])
 def predict():
-    """Predicts the Height of MLB Players"""
+    """Predict the cluster of an user"""
     
     json_payload = request.json
 
