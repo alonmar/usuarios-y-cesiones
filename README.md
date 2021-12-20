@@ -10,9 +10,9 @@
 *  `eda.ipynb`:  [eda.ipynb](https://github.com/alonmar/usuarios-y-cesiones/blob/main/eda.ipynb) EDA and Export model
 
 
-### CLI Tools
+### CLI Tool
 
-There are two cli tools.  First, the main `cli.py` is the endpoint that serves out predictions.
+The  `cli.py` is the endpoint that serves out predictions.
 To predict the cluster of an user you use the following: 
 
 `$ python .\cli.py --monactivo 0 --meansales 0 --meancesiones 0 --proyecsales 0 --proyecbuys 0`
